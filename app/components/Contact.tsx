@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { asset } from "../lib/paths";
 import { Reveal, SectionLabel } from "./primitives";
 
 export function Contact() {
@@ -20,7 +21,7 @@ export function Contact() {
     >
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/image5.webp"
+          src={asset("/images/image5.webp")}
           alt=""
           fill
           sizes="100vw"

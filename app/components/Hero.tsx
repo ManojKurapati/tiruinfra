@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import Image from "next/image";
+import { asset } from "../lib/paths";
 import { HeadlineReveal, MagneticButton, SectionLabel } from "./primitives";
 
 export function Hero() {
@@ -28,7 +29,7 @@ export function Hero() {
             className="absolute inset-0 will-change-transform"
           >
             <Image
-              src="/images/image2.webp"
+              src={asset("/images/image2.webp")}
               alt="Tiruinfra construction project — large structural site at golden hour"
               fill
               priority

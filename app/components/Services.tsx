@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import { asset } from "../lib/paths";
 import { OrangeLine, Reveal, SectionLabel } from "./primitives";
 
 const services = [
@@ -11,28 +12,28 @@ const services = [
     title: "Civil & Structural Construction",
     blurb:
       "Buildings, industrial sheds, foundations and structural steel — engineered and executed by our in-house teams.",
-    img: "/images/image.webp",
+    img: asset("/images/image.webp"),
   },
   {
     n: "02",
     title: "Project Management & Turnkey Delivery",
     blurb:
       "Single-point accountability from design through procurement, execution and handover.",
-    img: "/images/image3.webp",
+    img: asset("/images/image3.webp"),
   },
   {
     n: "03",
     title: "Infrastructure Development",
     blurb:
       "Roads, drainage, site development and the heavy civil works that get a project off the ground.",
-    img: "/images/image7.webp",
+    img: asset("/images/image7.webp"),
   },
   {
     n: "04",
     title: "Renovation & Retrofit",
     blurb:
       "Structural strengthening, facility upgrades and adaptive reuse, executed without disrupting operations.",
-    img: "/images/image4.webp",
+    img: asset("/images/image4.webp"),
   },
 ];
 

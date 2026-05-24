@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { asset } from "../lib/paths";
 import {
   MagneticButton,
   OrangeLine,
@@ -17,7 +18,7 @@ const projects = [
     tag: "Industrial",
     brief:
       "180,000 sq ft pre-engineered structure with heavy crane bays and full site development.",
-    img: "/images/image.webp",
+    img: asset("/images/image.webp"),
     size: "lg",
   },
   {
@@ -27,7 +28,7 @@ const projects = [
     tag: "Infrastructure",
     brief:
       "2.4 km of public infrastructure — retaining walls, drainage, hardscape and landscape.",
-    img: "/images/image3.webp",
+    img: asset("/images/image3.webp"),
     size: "md",
   },
   {
@@ -36,7 +37,7 @@ const projects = [
     year: "2024",
     tag: "Industrial",
     brief: "320,000 sq ft warehousing with 16m clear height and full MEP fit-out.",
-    img: "/images/image7.webp",
+    img: asset("/images/image7.webp"),
     size: "md",
   },
   {
@@ -46,7 +47,7 @@ const projects = [
     tag: "Structural",
     brief:
       "5-level basement excavation, secant pile walls and raft foundation for a 32-storey tower.",
-    img: "/images/image6.webp",
+    img: asset("/images/image6.webp"),
     size: "sm",
   },
   {
@@ -56,7 +57,7 @@ const projects = [
     tag: "Renovation",
     brief:
       "Structural strengthening and adaptive reuse of a 1920s industrial complex into office space.",
-    img: "/images/image4.webp",
+    img: asset("/images/image4.webp"),
     size: "sm",
   },
   {
@@ -66,7 +67,7 @@ const projects = [
     tag: "Infrastructure",
     brief:
       "8.6 km four-lane bypass — earthworks, base course, drainage and protective works.",
-    img: "/images/image5.webp",
+    img: asset("/images/image5.webp"),
     size: "sm",
   },
 ];

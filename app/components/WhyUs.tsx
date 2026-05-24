@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import { asset } from "../lib/paths";
 import { OrangeLine, Reveal, SectionLabel } from "./primitives";
 
 const items = [
@@ -38,7 +39,7 @@ export function WhyUs() {
         <Reveal className="relative h-[420px] lg:h-auto lg:min-h-[640px] overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/images/image6.webp"
+              src={asset("/images/image6.webp")}
               alt="Tiruinfra engineering team on site"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
