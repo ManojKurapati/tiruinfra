@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import clsx from "clsx";
 import { MagneticButton } from "./primitives";
+import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
   { label: "About", href: "#about" },
@@ -66,19 +67,22 @@ export function Navigation() {
             ))}
           </nav>
 
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-4">
+            <ThemeToggle />
             <MagneticButton href="#contact" variant="primary">
               Get a Quote
             </MagneticButton>
           </div>
 
-          {/* Mobile burger */}
-          <button
-            onClick={() => setOpen((v) => !v)}
-            className="lg:hidden flex flex-col gap-1.5 p-2 cursor-none"
-            aria-label="Toggle menu"
-            data-cursor="hover"
-          >
+          {/* Mobile cluster */}
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setOpen((v) => !v)}
+              className="flex flex-col gap-1.5 p-2 cursor-none"
+              aria-label="Toggle menu"
+              data-cursor="hover"
+            >
             <span
               className={clsx(
                 "block h-px w-6 bg-[var(--color-sand)] transition-transform duration-400",
@@ -97,7 +101,8 @@ export function Navigation() {
                 open && "-translate-y-[6px] -rotate-45"
               )}
             />
-          </button>
+            </button>
+          </div>
         </div>
       </header>
 

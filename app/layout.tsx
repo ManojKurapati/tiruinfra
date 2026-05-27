@@ -4,6 +4,7 @@ import "./globals.css";
 import { SmoothScroll } from "./components/SmoothScroll";
 import { CustomCursor } from "./components/CustomCursor";
 import { Preloader } from "./components/Preloader";
+import { WhatsAppButton } from "./components/WhatsAppButton";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -86,6 +87,13 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('tiru-theme');if(!t){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`,
+          }}
+        />
+      </head>
       <body className="bg-[var(--color-bg)] text-[var(--color-text)] min-h-screen overflow-x-hidden">
         <script
           type="application/ld+json"
@@ -96,6 +104,10 @@ export default function RootLayout({
         <Preloader />
         <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
+        <WhatsAppButton
+          phone="919390055781"
+          message="Hi Tiruinfra, I'd like to discuss a project."
+        />
       </body>
     </html>
   );
