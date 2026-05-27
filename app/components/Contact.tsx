@@ -123,9 +123,9 @@ export function Contact() {
         {/* Contact pills */}
         <div className="mt-12 grid sm:grid-cols-3 gap-4">
           {[
-            { icon: "phone", label: "Call", value: "+91 00 0000 0000" },
-            { icon: "mail", label: "Email", value: "hello@tiruinfra.com" },
-            { icon: "pin", label: "Office", value: "Chennai, India" },
+            { icon: "phone", label: "Call", value: "+91 9390055781" },
+            { icon: "mail", label: "Email", value: "maheshtiruveedula96@gmail.com" },
+            { icon: "pin", label: "Office", value: "Hyderabad, India" },
           ].map((c, i) => (
             <Reveal key={c.label} delay={0.1 + i * 0.08}>
               <div className="flex items-center gap-4 px-5 py-4 bg-[var(--color-bg)]/60 border border-white/5 rounded-[3px] backdrop-blur-md">

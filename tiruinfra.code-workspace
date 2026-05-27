@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "tiruinfra",
+			"path": "."
+		},
+		{
+			"name": "construction",
+			"path": "../Downloads/construction"
+		}
+	],
+	"settings": {}
+}

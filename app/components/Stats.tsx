@@ -5,10 +5,10 @@ import { useRef } from "react";
 import { Counter, OrangeLine, Reveal } from "./primitives";
 
 const stats = [
-  { num: 200, suffix: "+", label: "Projects Delivered" },
-  { num: 18, suffix: " Yrs", label: "In Operation" },
-  { num: 12, suffix: " States", label: "Pan-India Presence" },
-  { num: 800, suffix: " Cr+", prefix: "₹", label: "Infrastructure Built" },
+  { num: 3, suffix: "+", label: "Projects Delivered" },
+  { num: 26, suffix: " Yrs", label: "In Operation" },
+  { num: 4, suffix: " States", label: "Pan-India Presence" },
+  { num: 200, suffix: " Cr+", prefix: "₹", label: "Infrastructure Built" },
 ];
 
 export function Stats() {

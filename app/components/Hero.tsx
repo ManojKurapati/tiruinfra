@@ -118,7 +118,7 @@ export function Hero() {
             >
               <span>
                 <strong className="text-[var(--color-sand)] font-medium">
-                  200+
+                  3+
                 </strong>{" "}
                 Projects
               </span>
