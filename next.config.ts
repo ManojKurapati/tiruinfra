@@ -1,22 +1,17 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 
-const isGhPages = process.env.GITHUB_PAGES === "true";
-const repo = "tiruinfra";
-const basePath = isGhPages ? `/${repo}` : "";
-
 const nextConfig: NextConfig = {
   // Fully static output — works on GitHub Pages, Vercel, S3, anywhere.
   output: "export",
 
-  // GitHub Pages serves the site at /<repo>/. Vercel serves at /.
-  ...(isGhPages
-    ? { basePath, assetPrefix: `/${repo}/` }
-    : {}),
+  // Custom domain serves at the root, so basePath and assetPrefix are no longer needed
+  basePath: "",
+  assetPrefix: "",
 
-  // Expose basePath to client components for public-asset URLs.
+  // Keep this empty string so client components referencing it don't break
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_BASE_PATH: "",
   },
 
   // next/image's optimization endpoint doesn't exist in a static export.
